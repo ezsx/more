@@ -28,6 +28,7 @@ def read_matrix(path):
         return exit("Введенная матрица неквадратная") #O(log3n)
 s= input("Введите путь к файлу:")
 m = read_matrix(s)
+print(determinant(m))
 if determinant(m) == 0:
     print("Неопределенная")
 else:
